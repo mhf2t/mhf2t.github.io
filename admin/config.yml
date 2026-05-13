@@ -1,0 +1,65 @@
+# Decap CMS Configuration
+# This file defines what fields appear in your admin upload form.
+# You typically don't need to touch this — but you can add categories or fields later if you want.
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Where uploaded images/files get stored
+media_folder: "uploads"
+public_folder: "/uploads"
+
+# The main "Projects" collection — all your works live here
+collections:
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    files:
+      - file: "_data/projects.json"
+        label: "All Projects"
+        name: "projects"
+        fields:
+          - label: "Projects"
+            name: "items"
+            label_singular: "Project"
+            widget: "list"
+            summary: "{{fields.title}} — {{fields.category}}"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "Research", value: "research" }
+                  - { label: "BIM", value: "bim" }
+                  - { label: "Simulation", value: "simulation" }
+                  - { label: "Tools & Demos", value: "tools" }
+                  - { label: "Architecture", value: "architecture" }
+                  - { label: "Student Work", value: "student" }
+                  - { label: "Art", value: "art" }
+              - { label: "Year", name: "year", widget: "string", default: "2026" }
+              - { label: "Short Description", name: "description", widget: "text" }
+              - { label: "Cover Image", name: "image", widget: "image", required: false, hint: "Optional. If empty, a decorative placeholder is shown." }
+              - { label: "Tags (comma-separated)", name: "tags", widget: "string", required: false, hint: "e.g. EnergyPlus, Python, BIM" }
+              - { label: "External Link", name: "link", widget: "string", required: false, hint: "Optional. Link to live demo, paper, GitHub, etc." }
+              - { label: "Attached File (PDF, etc.)", name: "file", widget: "file", required: false, hint: "Optional. Upload a PDF, report, or document." }
+              - { label: "Featured?", name: "featured", widget: "boolean", default: false, hint: "Featured projects appear larger in the grid." }
+
+  - name: "about"
+    label: "About Page"
+    files:
+      - file: "_data/about.json"
+        label: "About Content"
+        name: "about"
+        fields:
+          - { label: "Headline", name: "headline", widget: "string" }
+          - { label: "Bio (paragraph 1)", name: "bio1", widget: "text" }
+          - { label: "Bio (paragraph 2)", name: "bio2", widget: "text" }
+          - { label: "Current Role", name: "role", widget: "string" }
+          - { label: "Affiliation", name: "affiliation", widget: "text" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "GitHub URL", name: "github", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+          - { label: "Google Scholar URL", name: "scholar", widget: "string", required: false }
+          - { label: "ORCID URL", name: "orcid", widget: "string", required: false }

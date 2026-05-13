@@ -1,0 +1,12 @@
+{
+  "headline": "Building computation for design.",
+  "bio1": "My work connects computational tools to real-world architectural and sustainability challenges. I build pipelines that move fluidly between Revit, Rhino/Grasshopper, EnergyPlus, and Python — translating building geometry into simulation, simulation into data, and data into decisions.",
+  "bio2": "Recent threads include automated ADA accessibility compliance checking from IFC models, climate-validity frameworks for LEED v4 analysis, and multi-output ML pipelines that predict building energy loads from EnergyPlus inputs.",
+  "role": "Graduate Researcher, iLab",
+  "affiliation": "Department of Architectural Studies\nUniversity of Missouri–Columbia\nMS in Design with Digital Media",
+  "email": "your.email@missouri.edu",
+  "github": "",
+  "linkedin": "",
+  "scholar": "",
+  "orcid": ""
+}

@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "title": "Hawthorne Apartments — Energy Simulation",
+      "category": "simulation",
+      "year": "2026",
+      "description": "8,760-hour annual EnergyPlus simulations of a pre-1980 ~100-unit residential building, powered by a Revit→Rhino.Inside→Honeybee pipeline running on iLab's supercomputer.",
+      "tags": "EnergyPlus, Honeybee, Rhino.Inside, Python",
+      "link": "",
+      "featured": true
+    },
+    {
+      "title": "Climate Validity Framework for LEED v4",
+      "category": "research",
+      "year": "2026",
+      "description": "An academic framework re-evaluating LEED v4 credits against climate-zone validity. Submitted to Building and Environment.",
+      "tags": "LEED v4, ASHRAE, Climate",
+      "link": "",
+      "featured": false
+    },
+    {
+      "title": "ADA Accessibility Checklist — Mobile Tool",
+      "category": "tools",
+      "year": "2025",
+      "description": "Standalone HTML survey tool for on-site ADA audits. Works offline, exports structured reports.",
+      "tags": "HTML, JS, ADA",
+      "link": "",
+      "featured": false
+    },
+    {
+      "title": "BIM-based Accessibility Compliance",
+      "category": "bim",
+      "year": "2025",
+      "description": "Hybrid rule engine pairing a Python numeric evaluator with an LLM for qualitative ADA clauses — driven by IFC parsing via ifcopenshell.",
+      "tags": "IFC, Python, LLM",
+      "link": "",
+      "featured": false
+    }
+  ]
+}
